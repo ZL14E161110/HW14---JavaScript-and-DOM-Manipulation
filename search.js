@@ -28,6 +28,7 @@ function renderTable() {
       var $cell = $row.insertCell(j);
       $cell.innerText = sighting[field];
     }
+    
   }
 }
 
