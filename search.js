@@ -28,8 +28,13 @@ function renderTable() {
       var $cell = $row.insertCell(j);
       $cell.innerText = ufodata[field];
     }
-    
   }
+  $(document).ready( function () {
+  	$('#table_id').DataTable({
+  		searching: false,
+    	ordering:  false
+  	});
+  } );
 }
 
 function handleSearchButtonClick() {
